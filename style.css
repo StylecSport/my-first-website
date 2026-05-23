@@ -87,3 +87,39 @@ body {
   text-align: center;
   padding: 30px;
 }
+/* FEATURED FIGHT */
+.featured-fight {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.featured-fight img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+}
+
+.featured-text {
+  max-width: 400px;
+  text-align: left;
+}
+
+.featured-text h3 {
+  color: red;
+  font-size: 32px;
+}
+
+.featured-text p {
+  color: lightgray;
+  line-height: 1.6;
+}
+
+/* CARD HOVER EFFECT */
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
