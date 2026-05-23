@@ -123,3 +123,32 @@ body {
   transform: translateY(-5px);
   transition: 0.3s;
 }
+/* SOCIAL LINKS */
+.social-links {
+  margin: 20px 0;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.social-links a:hover {
+  color: red;
+}
+
+/* FOOTER IMPROVEMENT */
+.footer h3 {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  color: gray;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
