@@ -124,6 +124,14 @@ body {
   color: red;
 }
 
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: #111;
+  display: block;
+}
+
 /* FOOTER */
 .footer {
   background: black;
