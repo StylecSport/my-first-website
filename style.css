@@ -6,17 +6,26 @@ body {
   line-height: 1.6;
 }
 
-/* NAVBAR */
 .navbar {
-  background: black;
+  background: rgba(0,0,0,0.95);
   padding: 15px;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #222;
 }
 
 .navbar a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: red;
 }
 
 /* HERO */
@@ -28,7 +37,8 @@ body {
 .hero-image {
   width: 100%;
   max-width: 900px;
-  border-radius: 12px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 .hero h1 {
@@ -143,5 +153,35 @@ body {
 }
 
 .social a:hover {
+  color: red;
+}
+
+/* GLOBAL ANIMATIONS */
+* {
+  scroll-behavior: smooth;
+}
+
+/* FADE-IN EFFECT */
+.hero,
+.section {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar a {
+  transition: 0.3s;
+}
+
+.navbar a:hover {
   color: red;
 }
