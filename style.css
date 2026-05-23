@@ -1,3 +1,5 @@
+
+/* RESET */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,6 +8,7 @@ body {
   line-height: 1.6;
 }
 
+/* NAVBAR */
 .navbar {
   background: rgba(0,0,0,0.95);
   padding: 15px;
@@ -44,10 +47,12 @@ body {
 .hero h1 {
   color: red;
   font-size: 48px;
+  margin-top: 20px;
 }
 
 .subtitle {
   color: gray;
+  font-size: 18px;
 }
 
 .hero-box {
@@ -76,8 +81,8 @@ body {
   border-top: 1px solid #1f1f1f;
 }
 
-/* FEATURED */
-.featured-box {
+/* FEATURED BOX */
+.featured-fight {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -85,42 +90,17 @@ body {
   margin-top: 30px;
 }
 
-.featured-box img {
+.featured-fight img {
   width: 300px;
   border-radius: 12px;
 }
 
-/* GALLERY */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
+.featured-text {
+  max-width: 400px;
+  text-align: left;
 }
 
-.card {
-  background: #1a1a1a;
-  width: 280px;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-}
-
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.card h3 {
-  color: red;
-}
-
-/* CONTENT CARDS */
+/* CARDS */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -128,11 +108,20 @@ body {
   gap: 20px;
 }
 
-.card-box {
+.card {
   background: #1a1a1a;
   width: 250px;
   padding: 20px;
   border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  color: red;
 }
 
 /* FOOTER */
@@ -146,22 +135,21 @@ body {
   color: red;
 }
 
-.social a {
+.social-links a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
 }
 
-.social a:hover {
+.social-links a:hover {
   color: red;
 }
 
-/* GLOBAL ANIMATIONS */
+/* ANIMATIONS */
 * {
   scroll-behavior: smooth;
 }
 
-/* FADE-IN EFFECT */
 .hero,
 .section {
   animation: fadeIn 0.8s ease-in-out;
@@ -176,12 +164,4 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.navbar a {
-  transition: 0.3s;
-}
-
-.navbar a:hover {
-  color: red;
 }
