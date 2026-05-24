@@ -56,6 +56,28 @@ body {
   width: 100%;
 }
 
+.logo {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: red;
+}
+
 /* HERO */
 .hero {
   text-align: center;
@@ -83,6 +105,25 @@ body {
 .subtitle {
   color: gray;
   font-size: 18px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .hero-box {
@@ -179,10 +220,6 @@ body {
     0 0 20px rgba(255,0,0,0.15);
 }
 
-.card:hover {
-  transform: translateY(-8px);
-}
-
 /* IMAGE */
 .card img {
   width: 100%;
@@ -226,6 +263,11 @@ body {
 
 .footer p {
   color: #aaa;
+}
+
+#latest-video iframe {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
 .social-links {
@@ -273,7 +315,7 @@ body {
 .hero {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -367,8 +409,12 @@ body {
   }
 
   .section h2 {
-    font-size: 30px;
-  }
+  font-size: 34px;
+  color: red;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 
   .cards {
     grid-template-columns: 1fr;
@@ -411,4 +457,158 @@ body {
   to {
     opacity: 1;
   }
+}
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .navbar a {
+    display: inline-block;
+    margin: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .hero-box {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar a {
+    margin: 6px 10px;
+    font-size: 14px;
+  }
+
+  .section h2 {
+    font-size: 24px;
+  }
+}
+
+#news .hero-box {
+  text-align: left;
+  background: #121212;
+  border-left: 4px solid red;
+}
+
+#news p {
+  margin: 12px 0;
+  padding: 8px;
+  border-bottom: 1px solid #222;
+  transition: 0.3s ease;
+}
+
+#news p:hover {
+  background: rgba(255, 0, 0, 0.08);
+  padding-left: 12px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section {
+  padding: 80px 20px;
+  margin-top: 20px;
+  border-top: 1px solid #1f1f1f;
+}
+
+.hero-box {
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+
+#latest-video {
+  text-align: center;
+}
+
+#latest-video .featured-fight {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #121212;
+  border-radius: 16px;
+  border: 1px solid #222;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+#latest-video iframe {
+  border-radius: 12px;
+}
+
+#social-bar {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-buttons a {
+  background: #1a1a1a;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border: 1px solid #222;
+  transition: 0.3s ease;
+}
+
+.social-buttons a:hover {
+  background: red;
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(255,0,0,0.4);
+}
+
+.card-link {
+  text-decoration: none;
+  color: white;
 }
