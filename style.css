@@ -167,11 +167,12 @@ body {
 }
 
 .section h2 {
-  font-size: 42px;
-  color: red;
-  margin-bottom: 15px;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #fff;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .section p {
@@ -213,11 +214,13 @@ body {
   border: 1px solid #222;
 }
 
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow:
-    0 15px 35px rgba(255,0,0,0.25),
-    0 0 20px rgba(255,0,0,0.15);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
 }
 
 /* IMAGE */
@@ -229,7 +232,7 @@ body {
 }
 
 .card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 /* TEXT */
@@ -449,6 +452,11 @@ body {
   animation: fadePage 0.5s ease;
 }
 
+body {
+  background: radial-gradient(circle at top, #1a1a1a, #0a0a0a);
+  color: white;
+}
+
 @keyframes fadePage {
   from {
     opacity: 0;
@@ -588,18 +596,26 @@ h1 {
 .social-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
 .social-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   background: #1a1a1a;
-  padding: 12px 20px;
-  border-radius: 10px;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+  border-radius: 12px;
   border: 1px solid #222;
   transition: 0.3s ease;
+}
+
+.social-buttons img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
 }
 
 .social-buttons a:hover {
@@ -611,4 +627,27 @@ h1 {
 .card-link {
   text-decoration: none;
   color: white;
+}
+
+.section {
+  padding: 70px 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  cursor: pointer;
+}
+
+h1, h2 {
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
 }
