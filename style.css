@@ -616,3 +616,37 @@ h1, h2 {
   text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
 }
 
+/* BREAKING NEWS TICKER */
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: #111;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  padding: 12px 0;
+}
+
+.ticker {
+  display: inline-block;
+  white-space: nowrap;
+  animation: tickerMove 22s linear infinite;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.ticker span:first-child {
+  color: red;
+  margin-right: 20px;
+}
+
+@keyframes tickerMove {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
