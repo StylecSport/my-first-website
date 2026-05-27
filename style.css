@@ -633,6 +633,7 @@ h1, h2 {
   color: white;
   font-weight: bold;
   font-size: 14px;
+  letter-spacing: 0.5px;
 }
 
 .ticker span:first-child {
@@ -648,5 +649,250 @@ h1, h2 {
   to {
     transform: translateX(-100%);
   }
+}
+
+/* NEWS GRID */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* NEWS CARD */
+.news-card {
+  background: #1a1a1a;
+  border-radius: 16px;
+  border: 1px solid #222;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  overflow: hidden;
+}
+
+.news-card:hover {
+  transform: translateY(-8px);
+  border-color: red;
+}
+
+/* NEWS CARD TITLE */
+.news-card h3 {
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* NEWS TEXT */
+.news-card p {
+  color: #bbb;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* READ MORE BUTTON */
+.news-card a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* NEWS CARD IMAGE */
+.news-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* NEWS CONTENT */
+.news-content {
+  padding: 20px;
+}
+
+/* CATEGORY TAG */
+.news-tag {
+  display: inline-block;
+  background: red;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* IMAGE HOVER EFFECT */
+
+.news-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: red;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+/* ARTICLE HEADER */
+.article-header {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.article-header h1 {
+  font-size: 48px;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.2;
+}
+
+.article-date {
+  margin-top: 20px;
+  color: #888;
+  font-size: 14px;
+}
+
+/* ARTICLE IMAGE */
+/* ARTICLE IMAGE AREA */
+.article-image-bg {
+  background-image: url("images/gloves-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.article-image-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(4px);
+}
+
+.article-image-bg img {
+  position: relative;
+  z-index: 2;
+}
+
+/* ARTICLE IMAGE */
+.article-image-bg img {
+  width: 130%;
+  max-width: none;
+  max-height: 600px;
+  object-fit: contain;
+  display: block;
+  margin: 30px auto;
+  transform: translateX(-15%);
+  position: relative;
+  z-index: 2;
+}
+ 
+/* ARTICLE CONTENT */
+.article-content {
+  padding: 60px 20px;
+}
+
+/* ARTICLE CONTAINER */
+.article-container {
+  max-width: 850px;
+  margin: auto;
+}
+
+/* ARTICLE PARAGRAPHS */
+.article-content p {
+  font-size: 18px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+/* BACK BUTTON */
+.back-home {
+  display: inline-block;
+  margin-top: 40px;
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.back-home:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .hero .subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .article-image-bg img {
+    width: 100%;
+    transform: none;
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.featured-card {
+  grid-column: span 2;
+  border: 1px solid red;
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .featured-card {
+    grid-column: span 1;
+    transform: none;
+  }
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-left: 4px solid red;
+  padding-left: 10px;
+}
+
+.news-card img {
+  transition: transform 0.5s ease;
+}
+
+.news-card:hover img {
+  transform: scale(1.08);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
