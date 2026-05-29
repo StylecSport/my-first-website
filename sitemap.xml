@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://stylecsport.github.io/my-first-website/</loc>
+    <loc>https://stylecsport.com/</loc>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <changefreq>daily</changefreq>
   </url>
 
   <url>
-    <loc>https://stylecsport.github.io/my-first-website/news.html</loc>
-    <priority>0.9</priority>
+    <loc>https://stylecsport.com/news.html</loc>
     <changefreq>daily</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://stylecsport.github.io/my-first-website/predictions.html</loc>
-    <priority>0.9</priority>
+    <loc>https://stylecsport.com/predictions.html</loc>
     <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://stylecsport.github.io/my-first-website/about.html</loc>
-    <priority>0.5</priority>
+    <loc>https://stylecsport.com/about.html</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://stylecsport.github.io/my-first-website/contact.html</loc>
-    <priority>0.3</priority>
+    <loc>https://stylecsport.com/contact.html</loc>
     <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>
