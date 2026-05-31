@@ -346,28 +346,33 @@ body {
   position: relative;
 }
 
+/* moving track */
 .ticker {
   display: flex;
   width: max-content;
-  animation: scrollTicker 18s linear infinite;
+  animation: tickerMove 18s linear infinite;
 }
 
-.ticker-content {
-  display: flex;
+/* content inside ticker */
+.ticker span {
   white-space: nowrap;
-  gap: 40px;
-  align-items: center;
-}
-
-.ticker-content span:first-child {
-  color: red;
+  margin-right: 40px;
   font-weight: bold;
+  font-size: 14px;
+  color: white;
 }
 
-@keyframes scrollTicker {
+/* highlight BREAKING */
+.ticker span:first-child {
+  color: red;
+}
+
+/* animation */
+@keyframes tickerMove {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
