@@ -334,3 +334,38 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* BREAKING NEWS TICKER */
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: #111;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  padding: 12px 0;
+}
+
+.ticker {
+  display: inline-block;
+  white-space: nowrap;
+  animation: tickerMove 22s linear infinite;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.ticker span:first-child {
+  color: red;
+  margin-right: 20px;
+}
+
+/* animation */
+@keyframes tickerMove {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
