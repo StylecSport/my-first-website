@@ -343,29 +343,32 @@ body {
   border-top: 1px solid #222;
   border-bottom: 1px solid #222;
   padding: 12px 0;
+  position: relative;
 }
 
 .ticker {
-  display: inline-block;
+  display: flex;
+  width: max-content;
+  animation: scrollTicker 18s linear infinite;
+}
+
+.ticker-content {
+  display: flex;
   white-space: nowrap;
-  animation: tickerMove 22s linear infinite;
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 0.5px;
+  gap: 40px;
+  align-items: center;
 }
 
-.ticker span:first-child {
+.ticker-content span:first-child {
   color: red;
-  margin-right: 20px;
+  font-weight: bold;
 }
 
-/* animation */
-@keyframes tickerMove {
-  from {
+@keyframes scrollTicker {
+  0% {
     transform: translateX(100%);
   }
-  to {
+  100% {
     transform: translateX(-100%);
   }
 }
