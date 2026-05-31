@@ -517,6 +517,7 @@ h1 {
   flex-wrap: wrap;
 }
 
+/* icon container */
 .social-buttons a {
   display: inline-flex;
   align-items: center;
@@ -526,19 +527,25 @@ h1 {
   background: #1a1a1a;
   border-radius: 12px;
   border: 1px solid #222;
-  transition: 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
+/* icon image */
 .social-buttons img {
-  width: 20px;
-  height: 20px;
-  filter: brightness(0) invert(1);
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  filter: none;
+  transition: transform 0.2s ease;
 }
 
+/* hover effects */
 .social-buttons a:hover {
-  background: red;
-  transform: translateY(-3px);
-  box-shadow: 0 0 15px rgba(255,0,0,0.4);
+  transform: translateY(-2px);
+}
+
+.social-buttons img:hover {
+  transform: scale(1.15);
 }
 
 .card-link {
