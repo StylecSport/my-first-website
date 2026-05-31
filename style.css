@@ -193,12 +193,26 @@ body {
   color: #bbb;
 }
 
-/* NEWS GRID */
+/* NEWS GRID (DESKTOP DEFAULT) */
 .news-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   margin-top: 30px;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 900px) {
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .news-card {
