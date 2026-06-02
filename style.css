@@ -351,7 +351,7 @@ body {
   .section h2 {
     font-size: 22px;
   }
-@media (max-width: 768px) {
+
   .cards,
   .news-grid {
     grid-template-columns: 1fr;
