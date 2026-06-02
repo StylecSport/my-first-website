@@ -358,9 +358,7 @@ body {
   }
 }
 
-/* =========================
-   BREAKING NEWS TICKER
-========================= */
+/* BREAKING NEWS TICKER */
 
 .ticker-wrap {
   width: 100%;
@@ -369,25 +367,22 @@ body {
   border-top: 1px solid #222;
   border-bottom: 1px solid #222;
   padding: 12px 0;
-  position: relative;
 }
 
-.ticker {
-  display: flex;
-  white-space: nowrap;
-  width: max-content;
-  animation: tickerMove 20s linear infinite;
-}
-
-.ticker span {
+.ticker-content {
   display: inline-block;
+  white-space: nowrap;
+  animation: tickerMove 18s linear infinite;
+}
+
+.ticker-content span {
   margin-right: 50px;
   font-weight: bold;
   font-size: 14px;
   color: white;
 }
 
-.ticker span:first-child {
+.ticker-content span:first-child {
   color: red;
 }
 
@@ -395,7 +390,6 @@ body {
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(-100%);
   }
