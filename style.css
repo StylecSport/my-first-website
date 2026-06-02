@@ -358,7 +358,10 @@ body {
   }
 }
 
-/* BREAKING NEWS TICKER */
+/* =========================
+   BREAKING NEWS TICKER
+========================= */
+
 .ticker-wrap {
   width: 100%;
   overflow: hidden;
@@ -369,28 +372,25 @@ body {
   position: relative;
 }
 
-/* moving track */
 .ticker {
   display: flex;
+  white-space: nowrap;
   width: max-content;
-  animation: tickerMove 18s linear infinite;
+  animation: tickerMove 20s linear infinite;
 }
 
-/* content inside ticker */
 .ticker span {
-  white-space: nowrap;
-  margin-right: 40px;
+  display: inline-block;
+  margin-right: 50px;
   font-weight: bold;
   font-size: 14px;
   color: white;
 }
 
-/* highlight BREAKING */
 .ticker span:first-child {
   color: red;
 }
 
-/* animation */
 @keyframes tickerMove {
   0% {
     transform: translateX(100%);
