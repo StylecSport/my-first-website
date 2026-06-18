@@ -393,4 +393,18 @@ body {
   100% {
     transform: translateX(-100%);
   }
+  
+  /* ARTICLE VIDEO BOX */
+
+.video-box {
+
+  background: #111;
+  padding: 40px;
+  margin-top: 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+
+}
+  
 }
